@@ -5,15 +5,9 @@ public class Address {
     private String city;
     private int pincode;
 
-    public void setHouseNo(int houseNo) {
+    public Address(int houseNo, String city, int pincode) {
         this.houseNo = houseNo;
-    }
-
-    public void setCity(String city) {
         this.city = city;
-    }
-
-    public void setPincode(int pincode) {
         this.pincode = pincode;
     }
 

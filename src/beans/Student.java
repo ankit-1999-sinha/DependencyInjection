@@ -5,15 +5,9 @@ public class Student {
     private String name;
     private Address address;
 
-    public void setRollNo(int rollNo) {
+    public Student(int rollNo, String name, Address address) {
         this.rollNo = rollNo;
-    }
-
-    public void setName(String name) {
         this.name = name;
-    }
-
-    public void setAddress(Address address) {
         this.address = address;
     }
 
