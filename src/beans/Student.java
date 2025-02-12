@@ -1,8 +1,12 @@
 package beans;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class Student {
     private int rollNo;
     private String name;
+
+    @Autowired
     private Address address;
 
     public void setRollNo(int rollNo) {
