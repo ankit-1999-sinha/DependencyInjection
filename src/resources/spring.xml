@@ -5,10 +5,16 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
-    <bean class="beans.Address" id="addId">
+    <bean class="beans.Address" id="addId" autowire-candidate="false">
         <property name="houseNo" value="2"/>
         <property name="city" value="wb"/>
         <property name="pincode" value="7340"/>
+    </bean>
+
+    <bean class="beans.Address" id="addrId2">
+        <property name="houseNo" value="7"/>
+        <property name="city" value="UP"/>
+        <property name="pincode" value="89"/>
     </bean>
 
     <bean class="beans.Student" id="stdId" autowire="byType">
