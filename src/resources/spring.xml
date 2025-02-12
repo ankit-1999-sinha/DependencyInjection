@@ -4,22 +4,22 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <!-- bean definitions here -->
-    <bean class="beans.Address" id="addId" autowire-candidate="false">
-        <property name="houseNo" value="2"/>
-        <property name="city" value="wb"/>
-        <property name="pincode" value="7340"/>
+    <bean class="beans.Address" id="addrId" autowire-candidate="false">
+        <constructor-arg value="2"/>
+        <constructor-arg value="delhi"/>
+        <constructor-arg value="7122"/>
     </bean>
 
-    <bean class="beans.Address" id="addrId2">
-        <property name="houseNo" value="7"/>
-        <property name="city" value="UP"/>
-        <property name="pincode" value="89"/>
+    <bean class="beans.Address" id="addrId2" >
+        <constructor-arg value="77"/>
+        <constructor-arg value="chandi"/>
+        <constructor-arg value="8999"/>
     </bean>
 
-    <bean class="beans.Student" id="stdId" autowire="byType">
-        <property name="rollNo" value="2"/>
-        <property name="name" value="Ankit"/>
+    <bean class="beans.Student" id="stdId" autowire="constructor">
+        <constructor-arg value="55" index="0"/>
+        <constructor-arg value="ankit" index="1"/>
+
 
     </bean>
 

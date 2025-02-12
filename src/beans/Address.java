@@ -5,18 +5,9 @@ public class Address {
     private String city;
     private int pincode;
 
-    public void setHouseNo(int houseNo) {
-        System.out.println("setter method for house no");
+    public Address(int houseNo, String city, int pincode) {
         this.houseNo = houseNo;
-    }
-
-    public void setCity(String city) {
-        System.out.println("setter method for city");
         this.city = city;
-    }
-
-    public void setPincode(int pincode) {
-        System.out.println("setter method for pincode");
         this.pincode = pincode;
     }
 

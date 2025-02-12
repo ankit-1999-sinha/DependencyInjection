@@ -11,7 +11,7 @@ public class Main {
         String fileLoc = "resources/spring.xml";
         ApplicationContext context = new ClassPathXmlApplicationContext(fileLoc);
         Student student = (Student) context.getBean("stdId");
-        Address address = (Address) context.getBean("addId");
+        Address address = (Address) context.getBean("addrId");
         System.out.println(address.toString());
         student.display();
 
