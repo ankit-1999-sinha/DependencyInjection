@@ -18,6 +18,15 @@ public class springConfigfile {
     }
 
     @Bean
+    public Address createAddress2(){
+        Address address = new Address();
+        address.setHouseNo(4);
+        address.setCity("chandigarh");
+        address.setPincode(7555);
+        return address;
+    }
+
+    @Bean
     public Student createStudent(){
 
         Student student = new Student();
