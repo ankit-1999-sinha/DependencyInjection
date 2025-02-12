@@ -4,7 +4,7 @@ public class Student {
     private int rollNo;
     private String name;
     private Address address; // in mode byName this should be same as beanId and internally it uses setter method
-
+// in mode byType it checks data type
     public void setRollNo(int rollNo) {
         System.out.println("setter method for rollNo");
         this.rollNo = rollNo;
